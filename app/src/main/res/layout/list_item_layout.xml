@@ -1,67 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/photoView" 
-        android:layout_margin="5px"
+        android:id="@+id/photoView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
         android:src="@android:drawable/ic_dialog_email"/>
-    
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/nameText"
-            android:textStyle="bold"
-            android:textColor="#666872"
-            android:textSize="22px"
-            android:text="@string/driver_name"/>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/ageText"
-                android:textColor="#666872"
-                android:textSize="22px"
-                android:text="@string/drive_year"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/areaText"
-                android:textColor="#666872"
-                android:textSize="22px"
-                android:text="@string/birth_area"/>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/distanceText"
-            android:textColor="#666872"
-            android:textSize="22px"
-            android:text="@string/distance"/>
-    </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right|center_horizontal"
+        android:layout_width="150px"
+        android:layout_height="80px"
+        android:layout_centerVertical="true"
         android:id="@+id/callButton"
-        android:layout_marginRight="10px"
+        android:layout_alignParentRight="true"
         android:text="@string/call"/>
 
-</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameText"
+        android:textStyle="bold"
+        android:textColor="#666872"
+        android:textSize="30px"
+        android:layout_alignTop="@id/photoView"
+        android:layout_toRightOf="@id/photoView"
+        android:layout_margin="5px"
+        android:text="@string/driver_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageText"
+        android:textColor="#666872"
+        android:textSize="22px"
+        android:layout_toRightOf="@id/photoView"
+        android:layout_margin="5px"
+        android:layout_below="@id/nameText"
+        android:text="@string/drive_year"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/areaText"
+        android:textColor="#666872"
+        android:textSize="22px"
+        android:layout_alignTop="@id/ageText"
+        android:layout_toLeftOf="@id/callButton"
+        android:layout_margin="5px"
+        android:text="@string/birth_area"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/distanceText"
+        android:textColor="#666872"
+        android:textSize="22px"
+        android:layout_margin="5px"
+        android:layout_below="@id/ageText"
+        android:layout_toRightOf="@id/photoView"
+        android:text="@string/distance"/>
+
+
+
+</RelativeLayout>

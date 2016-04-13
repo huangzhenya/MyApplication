@@ -88,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 holder.areaTxt = (TextView)convertView.findViewById(R.id.areaText);
                 holder.distanceTxt = (TextView)convertView.findViewById(R.id.distanceText);
                 holder.callButtion = (Button)convertView.findViewById(R.id.callButton);
+
                 convertView.setTag(holder);
 
             }else {
