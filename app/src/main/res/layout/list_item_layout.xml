@@ -20,7 +20,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/nameText"
-            android:textColor="#FFFFFF00"
+            android:textStyle="bold"
+            android:textColor="#666872"
             android:textSize="22px"
             android:text="@string/driver_name"/>
 
@@ -33,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/ageText"
-                android:textColor="#FFFFFF00"
+                android:textColor="#666872"
                 android:textSize="22px"
                 android:text="@string/drive_year"/>
 
@@ -41,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/areaText"
-                android:textColor="#FFFFFF00"
+                android:textColor="#666872"
                 android:textSize="22px"
                 android:text="@string/birth_area"/>
         </LinearLayout>
@@ -50,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/distanceText"
-            android:textColor="#FFFFFF00"
+            android:textColor="#666872"
             android:textSize="22px"
             android:text="@string/distance"/>
     </LinearLayout>
@@ -58,6 +59,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="right|center_horizontal"
         android:id="@+id/callButton"
         android:layout_marginRight="10px"
         android:text="@string/call"/>

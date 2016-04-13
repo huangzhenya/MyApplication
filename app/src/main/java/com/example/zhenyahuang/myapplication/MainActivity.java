@@ -12,6 +12,11 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity {
 
     private ListView listView;
@@ -22,20 +27,40 @@ public class MainActivity extends AppCompatActivity {
 
         listView = (ListView)findViewById(R.id.list);
 
-        listView.setAdapter(new ListAdapter(this));
+        List<Map<String, Object>> data_list = this.getData();
+
+        listView.setAdapter(new ListAdapter(this, data_list));
     }
+
+
+    public List<Map<String, Object>> getData(){
+        List<Map<String, Object>> list=new ArrayList<Map<String,Object>>();
+        for (int i = 0; i < 10; i++) {
+            Map<String, Object> map=new HashMap<String, Object>();
+            map.put("name", "张三"+i);
+            map.put("age", "驾龄：5年");
+            map.put("birth_area", "籍贯：北京");
+            map.put("distance", "距离：1km");
+            list.add(map);
+        }
+        return list;
+    }
+
 
     public class ListAdapter extends BaseAdapter{
 
+        private Context context;
         private LayoutInflater mInflater;
-        public ListAdapter(Context context){
-
+        private List<Map<String, Object>> data;
+        public ListAdapter(Context context,List<Map<String, Object>> data){
+            this.context = context;
             this.mInflater = LayoutInflater.from(context);
+            this.data = data;
         }
 
         @Override
         public int getCount() {
-            return 0;
+            return data.size();
         }
 
         @Override
