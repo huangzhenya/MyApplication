@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/nameText"
-            android:textColor="#FFFFFFFF"
+            android:textColor="#FFFFFF00"
             android:textSize="22px"
             android:text="@string/driver_name"/>
 
@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/ageText"
-                android:textColor="#FFFFFFFF"
+                android:textColor="#FFFFFF00"
                 android:textSize="22px"
                 android:text="@string/drive_year"/>
 
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/areaText"
-                android:textColor="#FFFFFFFF"
+                android:textColor="#FFFFFF00"
                 android:textSize="22px"
                 android:text="@string/birth_area"/>
         </LinearLayout>
@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/distanceText"
-            android:textColor="#FFFFFFFF"
+            android:textColor="#FFFFFF00"
             android:textSize="22px"
             android:text="@string/distance"/>
     </LinearLayout>

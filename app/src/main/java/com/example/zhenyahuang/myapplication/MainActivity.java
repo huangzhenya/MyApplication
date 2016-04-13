@@ -3,7 +3,6 @@ package com.example.zhenyahuang.myapplication;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView.ViewHolder;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,22 +14,22 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ListView lv;
+    private ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
-        lv = new ListView(this);
+        listView = (ListView)findViewById(R.id.list);
 
-        lv.setAdapter(new ListAdapter(this));
-        setContentView(lv);
+        listView.setAdapter(new ListAdapter(this));
     }
 
     public class ListAdapter extends BaseAdapter{
 
         private LayoutInflater mInflater;
         public ListAdapter(Context context){
+
             this.mInflater = LayoutInflater.from(context);
         }
 
@@ -62,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 holder.nameTxt = (TextView)convertView.findViewById(R.id.nameText);
                 holder.ageTxt = (TextView)convertView.findViewById(R.id.ageText);
                 holder.areaTxt = (TextView)convertView.findViewById(R.id.areaText);
+                holder.distanceTxt = (TextView)convertView.findViewById(R.id.distanceText);
                 holder.callButtion = (Button)convertView.findViewById(R.id.callButton);
                 convertView.setTag(holder);
 
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public final class ViewHolder{
+    public static class ViewHolder{
         public ImageView photoImg;
         public TextView nameTxt;
         public TextView ageTxt;
