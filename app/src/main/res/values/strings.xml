@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_basic">BasicActivity</string>
+
+    <string name="driver_name">Jack</string>
+    <string name="drive_year">驾龄</string>
+    <string name="birth_area">籍贯</string>
+    <string name="distance">距离</string>
+    <string name="call">拨号</string>
+</resources>
