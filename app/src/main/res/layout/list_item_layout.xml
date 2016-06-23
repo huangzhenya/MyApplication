@@ -4,20 +4,21 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200px"
+        android:layout_height="200px"
         android:id="@+id/photoView"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:src="@android:drawable/ic_dialog_email"/>
+        android:src="@drawable/photo_demo"/>
 
-    <Button
+    <ImageView
         android:layout_width="150px"
-        android:layout_height="80px"
+        android:layout_height="180px"
         android:layout_centerVertical="true"
         android:id="@+id/callButton"
         android:layout_alignParentRight="true"
-        android:text="@string/call"/>
+        android:layout_marginRight="50px"
+        android:src="@drawable/bohao"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,10 +26,10 @@
         android:id="@+id/nameText"
         android:textStyle="bold"
         android:textColor="#666872"
-        android:textSize="30px"
+        android:textSize="60px"
         android:layout_alignTop="@id/photoView"
         android:layout_toRightOf="@id/photoView"
-        android:layout_margin="5px"
+        android:layout_marginLeft="70px"
         android:text="@string/driver_name"/>
 
     <TextView
@@ -36,9 +37,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/ageText"
         android:textColor="#666872"
-        android:textSize="22px"
+        android:textSize="50px"
         android:layout_toRightOf="@id/photoView"
-        android:layout_margin="5px"
+        android:layout_marginLeft="50px"
         android:layout_below="@id/nameText"
         android:text="@string/drive_year"/>
 
@@ -47,10 +48,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/areaText"
         android:textColor="#666872"
-        android:textSize="22px"
+        android:textSize="50px"
         android:layout_alignTop="@id/ageText"
         android:layout_toLeftOf="@id/callButton"
-        android:layout_margin="5px"
+        android:layout_marginRight="50px"
         android:text="@string/birth_area"/>
 
     <TextView
@@ -58,12 +59,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/distanceText"
         android:textColor="#666872"
-        android:textSize="22px"
-        android:layout_margin="5px"
-        android:layout_below="@id/ageText"
+        android:textSize="50px"
         android:layout_toRightOf="@id/photoView"
+        android:layout_marginLeft="50px"
+        android:layout_below="@id/ageText"
         android:text="@string/distance"/>
-
-
-
 </RelativeLayout>

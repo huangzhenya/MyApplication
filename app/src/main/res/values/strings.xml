@@ -8,9 +8,10 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_basic">BasicActivity</string>
 
-    <string name="driver_name">Jack</string>
-    <string name="drive_year">驾龄</string>
-    <string name="birth_area">籍贯</string>
-    <string name="distance">距离</string>
+    <string name="title"></string>
+    <string name="driver_name">李天</string>
+    <string name="drive_year">驾龄:5年</string>
+    <string name="birth_area">籍贯:北京</string>
+    <string name="distance">距离:1.5km</string>
     <string name="call">拨号</string>
 </resources>
